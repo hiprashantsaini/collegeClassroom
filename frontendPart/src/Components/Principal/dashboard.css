@@ -1,0 +1,283 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.dashboard-container{
+    width: 100vw;
+    background-color: #fff;
+}
+
+
+/* Header css  */
+
+.header{
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    position: sticky;
+    top: 0px;
+}
+
+.header ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.header ul li{
+    cursor: pointer;
+}
+
+.header ul li a{
+    text-decoration: none;
+    color:#fff;
+}
+
+/* Teachers css  */
+.teachers{
+    width: 100%;
+    margin: 10px 0px;
+    box-shadow: 0 0 15px rgb(229, 79, 246);
+    padding: 10px;
+}
+
+.teacher-table{
+    width: 100%;
+    padding: 5px;
+}
+
+.teacher-table table{
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.teacher-table tr th,.teacher-table tr td{
+    margin: 0px;
+    border: 1px solid #ddd;
+    padding:5px 10px;
+}
+
+/* class room css  */
+.classroom{
+    width: 100%;
+    margin: 50px 0px;
+    box-shadow: 0 0 15px gray;
+    padding: 10px;
+}
+
+.classrooms-table{
+    width: 100%;
+    padding: 5px;
+}
+
+.classrooms-table table{
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.classrooms-table th, .classrooms-table td{
+    border: 1px solid #ddd;
+    padding:5px 10px;
+}
+
+/* students css  */
+.students{
+    width: 100%;
+    margin: 10px 0px;
+    box-shadow: 0 0 15px rgb(103, 230, 255);
+    padding: 10px;
+}
+
+.student-table{
+    width: 100%;
+    padding: 5px;
+}
+
+.student-table table{
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.student-table th,.student-table td{
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+}
+
+/* button css  */
+
+.addItem-button{
+    width: 100%;
+    text-align: center;
+    margin-bottom:10px;
+}
+
+button{
+    padding:3px 6px;
+    margin:0px 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: gray;
+    color: white;
+}
+
+
+/* add new  */
+.addNew{
+    position: fixed;
+    width: 100vw;
+    height:100vh;
+    z-index: 99;
+    background-color:gray;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.addNew form{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+    padding: 20px 10px;
+}
+
+.addNew form input{
+    outline: none;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+/* add new class  */
+.addNewClass{
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.addNewClass form{
+   width: 100%;
+   display: flex;
+   gap: 20px;
+   border: 1px solid rgb(183, 180, 180);
+   padding: 10px 0px;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.day-time{
+    display: flex;
+    gap: 5px;
+    height: 30px;
+    width: 240px;
+    align-items: center;
+}
+
+.time{
+    background-color: #fff;
+    border: 1px solid gray;
+}
+
+.time input{
+    border: none;
+    text-align: center;
+    outline: none;
+    height: 20px;
+    width: 50px;
+}
+
+.day-time select{
+    height: 22px;
+}
+
+.addNewClass form button{
+    width: 250px;
+    height: 25px;
+    padding: 5px 0px 10px 0px;
+}
+
+.add-classroom{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.add-classroom form{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.add-classroom form input{
+    width: 250px;
+}
+
+.add-classroom button{
+    width: 200px;
+}
+
+@media only screen and (max-width : 600px){
+    .teachers{
+        overflow-x: scroll;
+    }
+    
+    .teacher-table{
+        width: 600px;
+        padding: 5px;
+    }
+
+    .classroom{
+        overflow-x: scroll;
+    }
+
+    .classrooms-table{
+        width: 600px;
+    }
+
+    .students{
+       overflow-x: scroll;
+    }
+    
+    .student-table{
+        width: 600px;
+    }
+    
+}
+
+.site-footer{
+    width: 100%;
+    padding: 40px 0px;
+    background-color: #333;
+}
+
+.site-footer p{
+    text-align: center;
+    color: #fff;
+}
+
+@media only screen and (min-width:1500px){
+    .dashboard-container{
+        width: 1500px;
+        margin: 0px auto;
+    }
+}

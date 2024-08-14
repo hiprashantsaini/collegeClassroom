@@ -1,0 +1,53 @@
+.teacher-dash{
+    width: 100%;
+}
+
+.cover-page{
+    width: 100%;
+    height: 200px;
+    /* background: linear-gradient(rgb(255, 255, 106),rgb(114, 255, 114),rgb(253, 203, 108),rgb(255, 255, 110),rgb(249, 105, 249)); */
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover-page h2{
+    text-align: center;
+}
+
+.teacher-classroom{
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0px;
+    box-shadow: 0 0 5px rgb(157, 168, 147);
+}
+
+@media only screen and (max-width:600px){
+    .teacher-classroom{
+        overflow-x: scroll;
+    }
+
+    .classrooms-table{
+        width: 600px;
+    }
+}
+
+.site-footer{
+    width: 100%;
+    padding: 40px 0px;
+    background-color: #333;
+}
+
+.site-footer p{
+    text-align: center;
+    color: #fff;
+}
+
+@media only screen and (min-width:1500px){
+    .teacher-dash{
+        width: 1500px;
+        margin: 0px auto;
+    }
+}
